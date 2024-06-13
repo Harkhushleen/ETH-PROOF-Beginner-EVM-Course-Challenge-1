@@ -1,0 +1,41 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.26;
+contract challenge 
+{
+    uint public number;
+    string public myString;
+    int public value;
+    bool public boolvalue;
+
+    function setnumber(uint _number) public {
+        number = _number;
+    }
+
+    function getnumber() public view returns (uint){
+         return number;
+    }
+
+    function setstring(string memory _string) public {
+        myString = _string;
+    }
+
+    function getstring() public view returns (string memory){
+         return myString;
+    }
+
+    function setvalue(int _value) public {
+        value = _value;
+    }
+
+    function getvalue() public view returns (int){
+         return value;
+    }
+
+    function setbool(bool _boolvalue) public {
+        boolvalue = _boolvalue;
+    }
+
+    function getbool() public view returns (bool){
+         return boolvalue;
+    }
+}
